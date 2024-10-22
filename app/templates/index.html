@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Teste</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nome</td>
+                <td>Fabricante</td>
+                <td>Preco</td>
+                <td>Categoria</td>
+            </tr>
+        </thead>
+        <tbody>
+            {%for produto in produtos%}
+            <tr>
+                <th>{{Produtos.id}}</th>
+                <td>{{Produtos.nome}}</td>
+                <td>{{Produtos.fabricante}}</td>
+                <td>{{Produtos.preco}}</td>
+                <td>{{Produtos.categoria}}</td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>  
+</body>
+</html>
